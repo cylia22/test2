@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Configurator</title>
+  </head>
+  <body>
+    <h1>Handrail Configurator</h1>
+    <form>
+      <fieldset>
+        <legend>Step 1: Choose handrail type</legend>
+        <input type="radio" id="type1" name="handrailtype" value="type1">
+        <label for="type1">Type 1</label><br>
+        <input type="radio" id="type2" name="handrailtype" value="type2">
+        <label for="type2">Type 2</label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Step 2: Choose handrail color</legend>
+        <select name="handrailcolor">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="gray">Gray</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Step 3: Choose LED light option</legend>
+        <input type="radio" id="ledYes" name="ledoption" value="yes">
+        <label for="ledYes">Yes</label><br>
+        <input type="radio" id="ledNo" name="ledoption" value="no">
+        <label for="ledNo">No</label><br>
+      </fieldset>
+      <fieldset id="ledOptions" style="display: none;">
+        <legend>LED light options</legend>
+        <select name="ledtype">
+          <option value="basic">Basic</option>
+          <option value="luxury">Luxury</option>
+          <option value="executive">Executive</option>
+        </select><br>
+        <label for="transparentStrip">Transparent strip:</label>
+        <input type="checkbox" id="transparentStrip" name="transparentstrip"><br>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="handrail3D"></div>
+  </body>
+</html>
