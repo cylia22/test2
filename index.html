@@ -2,15 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    
-
-    <title>Profielnorm configurator</title>
+    <title>Handrail Configurator</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  
-   
-    <title>Configurator</title>
   </head>
   <body>
     <h1>Handrail Configurator</h1>
@@ -34,7 +27,7 @@
         <legend>Step 3: Choose LED light option</legend>
         <input type="radio" id="ledYes" name="ledoption" value="yes">
         <label for="ledYes">Yes</label><br>
-        <input type="radio" id="ledNo" name="ledoption" value="no">
+        <input type="radio" id="ledNo" name="ledoption" value="no" checked>
         <label for="ledNo">No</label><br>
       </fieldset>
       <fieldset id="ledOptions" style="display: none;">
@@ -44,12 +37,13 @@
           <option value="luxury">Luxury</option>
           <option value="executive">Executive</option>
         </select><br>
-        <label for="transparentStrip">Transparent strip:</label>
-        <input type="checkbox" id="transparentStrip" name="transparentstrip"><br>
+    
       </fieldset>
       <button type="submit">Submit</button>
     </form>
     <div id="handrail3D"></div>
-        <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
+
