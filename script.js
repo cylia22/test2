@@ -90,7 +90,5 @@ form.addEventListener('change', (event) => {
 
 // Function to animate the 3D model
 function animate() {
-  requestAnimationFrame(animate);
-  handrailMesh.rotation.x += 0.01;
-  handrail
+  requestAnimationFrame(animate
 
